@@ -1,0 +1,184 @@
+body{
+  background:rgb(240, 237, 234);
+  transition:.6s;
+}
+/*boton de cambio de temas*/
+.boxThemes{
+  position:absolute;
+  top:0;
+  right:-6%;
+  transform:translate(-50%,-50%);
+  display:flex;
+  justify-content:center;
+  text-align:center;
+}
+/*clase para cambiar de tema*/
+.bDark{
+  background:rgb(48, 48, 63);
+  color:rgb(250, 245, 239)
+}
+
+.bLight{
+  background:rgb(250, 245, 239)
+}
+/*.................................*/
+
+input[type="checkbox"]{
+  position:relative;
+  width:70px;
+  height:30px;
+  -webkit-appearance:none;
+  background:yellow;
+  outline:none;
+  border-radius:50px;
+  box-shadow:inset 0 0 5px #0007;
+  transition:.5s;
+}
+input[type="checkbox"]:checked{
+  background:lightblue;
+}
+
+input[type="checkbox"]:before{
+  content:'☀';
+  font-size:20px;
+  text-align:center;
+  color:yellow;
+  position:absolute;
+  top:-3px;
+  left:0;
+  padding:3px;
+  background:#f2f2f2;
+  border-radius:50%;
+  transform:scale(1,1);
+  transition:.5s;
+  cursor:pointer;
+  
+}
+
+input:checked[type="checkbox"]:before{
+  content:'🌙';
+  font-size:20px;
+  margin-left:40px;
+  transition:.5s;
+}
+
+.fa-sun{
+  font-size:50px;
+  text-align:center;
+  color:yellow
+}
+
+.fa-moon{
+  font-size:50px;
+  text-align:center;
+  
+}
+/*animacion de spinner*/
+.spinner {
+    width: 50px;
+    height: 15px;
+    text-align: center;
+    font-size: 10px;
+    position:absolute;
+    right:20%;
+    top:85%;
+    
+  }
+  
+  .spinner > div {
+    background-color: #333;
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+    
+    -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  }
+  
+  .spinner .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+  }
+  
+  .spinner .rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+  
+  .spinner .rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+  }
+  
+  .spinner .rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+  }
+  
+  @-webkit-keyframes sk-stretchdelay {
+    0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+    20% { -webkit-transform: scaleY(1.0) }
+  }
+  
+  @keyframes sk-stretchdelay {
+    0%, 40%, 100% { 
+      transform: scaleY(0.4);
+      -webkit-transform: scaleY(0.4);
+    }  20% { 
+      transform: scaleY(1.0);
+      -webkit-transform: scaleY(1.0);
+    }
+  }
+
+  .borde{
+    border:1px solid lightblue;
+  }
+
+  .navBar{
+    background:lightskyblue;
+    width:100%;
+    height:60px;
+    position:absolute;
+    top:0;
+    display:flex;
+    justify-content: space-evenly;
+    padding:0 20px 0 20px;
+  }
+  .navBar_lista{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+  }
+
+  .navBar_lista li{
+    list-style:none;
+    margin-left:20px;
+
+  }
+
+  .navBar_lista a{
+    text-decoration:none;
+    font-size:20px;
+  }
+  .Usuario{
+    font-size:30px;
+    font-weight: 500;
+    text-align:center;
+    margin-right:25%
+  }
+  /*margen de arriba haciendo uso de position y de top*/
+  .my{
+    position:relative;
+    top:40px
+  }
+  /*clase para tachar las tareas completadas*/
+  .tachado{
+    text-decoration:line-through;
+  }
+  /*tama;o minimo para la aplicacion*/
+
+
+
+  
+ 
+
